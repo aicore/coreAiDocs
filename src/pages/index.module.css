@@ -1,13 +1,9 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(45deg, var(--ifm-color-primary-darkest), var(--ifm-color-primary));
 }
 
 @media screen and (max-width: 996px) {
@@ -20,4 +16,48 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Timer styles */
+:global(.timer) {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin: 1rem 0;
+  backdrop-filter: blur(4px);
+}
+
+/* Progress bar styles */
+:global(.progress-bar) {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 0.25rem;
+  margin: 1rem auto;
+  max-width: 300px;
+}
+
+:global(.progress-value) {
+  background: white;
+  height: 0.5rem;
+  border-radius: 1rem;
+  transition: width 0.3s ease;
+}
+
+/* Button styles */
+.buttons :global(.button--secondary) {
+  background: white;
+  color: var(--ifm-color-primary);
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.buttons :global(.button--secondary:hover) {
+  background: white;
+  color: var(--ifm-color-primary-darker);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }

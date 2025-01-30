@@ -1,9 +1,9 @@
+import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
@@ -13,14 +13,22 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Learn LLM
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          Large Language Models Made Simple
+        </p>
+        <div className="timer">
+          ⏱️ 5-minute learning journey
+        </div>
+        <div className="progress-bar">
+          <div className="progress-value" style={{ width: "0%" }}></div>
+        </div>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Start Learning ⚡
           </Link>
         </div>
       </div>
@@ -32,8 +40,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Learn LLM in 5 Minutes"
+      description="Master Large Language Models in just 5 minutes. Quick start guide with practical examples and interactive learning.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
