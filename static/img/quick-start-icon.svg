@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Rocket body -->
+  <path d="M100 20c-22 40-30 80-30 120h60c0-40-8-80-30-120z" fill="#2e8555"/>
+  <path d="M85 140h30v30H85z" fill="#2e8555"/>
+  <!-- Rocket window -->
+  <circle cx="100" cy="80" r="15" fill="#ffffff"/>
+  <!-- Flames -->
+  <path d="M85 170c0 20 30 20 30 0" fill="#ff6b6b"/>
+</svg>

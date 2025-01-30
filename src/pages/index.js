@@ -18,11 +18,12 @@ function HomepageHeader() {
         <p className="hero__subtitle">
           Large Language Models Made Simple
         </p>
-        <div className="timer">
-          ⏱️ 5-minute learning journey
+        <div className={styles.timerBadge}>
+          <span className={styles.dot}></span>
+          5-minute learning journey
         </div>
-        <div className="progress-bar">
-          <div className="progress-value" style={{ width: "0%" }}></div>
+        <div className={styles.progressBar}>
+          <div className={styles.progressValue}></div>
         </div>
         <div className={styles.buttons}>
           <Link
@@ -40,8 +41,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title="Learn LLM in 5 Minutes"
-      description="Master Large Language Models in just 5 minutes. Quick start guide with practical examples and interactive learning.">
+      title="Learn LLM"
+      description="Learn Large Language Models in 5 minutes">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
