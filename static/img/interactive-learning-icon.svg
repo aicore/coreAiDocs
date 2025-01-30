@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Brain outline -->
+  <path d="M60 100c0-22.1 17.9-40 40-40s40 17.9 40 40c0 13.3-6.5 25.1-16.5 32.4 2.9 5.3 4.5 11.4 4.5 17.6h-56c0-6.2 1.6-12.3 4.5-17.6C66.5 125.1 60 113.3 60 100z" fill="#2e8555"/>
+  <!-- Connection lines -->
+  <circle cx="100" cy="90" r="5" fill="#ffffff"/>
+  <circle cx="80" cy="110" r="5" fill="#ffffff"/>
+  <circle cx="120" cy="110" r="5" fill="#ffffff"/>
+  <path d="M100 95l-20 15M100 95l20 15" stroke="#ffffff" stroke-width="2" fill="none"/>
+</svg>
